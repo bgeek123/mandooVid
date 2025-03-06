@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scroll Triggered Video</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section id="s1" class="section">
+    <h1>스크롤을 내려보세요!</h1>
+    <p>이 영역은 영상 섹션 이후에 위치해 스크롤 효과를 체감할 수 있도록 구성하였습니다.</p>
+  </section>
+
+  <!-- 영상이 포함된 섹션 -->
+  <section id="s2">
+    <!-- 배경 iframe -->
+    <div class="background">
+        <iframe 
+            src="https://player.vimeo.com/video/698413733?muted=1&amp;autoplay=1&amp;autopause=0&amp;pip=0&amp;controls=0&amp;loop=1&amp;background=1" 
+            frameborder="0" 
+            allow="autoplay; fullscreen; picture-in-picture" 
+            title="Background Video">
+        </iframe>
+    </div>
+    
+    <div class="contents">
+        <span class="lv-1">슈퍼 울릉도</span>
+        <!-- <span class="lv-2">관절 마스터</span>
+        <span class="lv-3">호랑이힘</span> -->
+        <!---->
+        <div class="circle">&nbsp;</div>
+        <!---->
+        <span class="lv-1">개쩌는 풀</span>
+        <!-- <span class="lv-2">미친 관절</span>
+        <span class="lv-3">쑤욱쑤욱</span> -->
+    </div>
+
+    </div>
+
+    <!-- 스크롤 제어 영상 -->
+    <section class="video-section section">
+      <video id="scrollVideo" preload="auto" muted playsinline>
+        <source src="./src/large-fire-with-transparent-background-2024-06-04-02-01-35-utc-hevc-safari.mp4" type="video/mp4">
+        브라우저가 비디오 태그를 지원하지 않습니다.
+      </video>
+    </section>
+  </section>
+
+  <!-- 기타 콘텐츠(스크롤 테스트용) -->
+  <section class="content section">
+    thirdSection
+  </section>
+
+  <section class="content section">
+    FourthSection
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
